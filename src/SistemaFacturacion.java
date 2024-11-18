@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 public class SistemaFacturacion {
     private static ArrayList<Factura> facturas = new ArrayList<>();
     private static ArrayList<Cliente> clientes = new ArrayList<>();
@@ -33,9 +34,9 @@ public class SistemaFacturacion {
                     Reporte.generarReporte(facturas);
                     break;
                 case 5:
-                    System.out.print("Ingrese RUC del cliente: ");
+                    System.out.print("Ingrese RUC del cliente : ");
                     String ruc = scanner.nextLine();
-                    System.out.print("Ingrese Razón Social del clientes: ");
+                    System.out.print("Ingrese Razón Sociales del clientes : ");
                     String razonSocial = scanner.nextLine();
                     admin.agregarCliente(clientes, ruc, razonSocial);
                     Historial.registrarAccion(historial, admin.getNombreUsuario(), "Agregó un cliente");
