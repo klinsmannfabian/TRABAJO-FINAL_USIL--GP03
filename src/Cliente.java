@@ -14,5 +14,4 @@ public class Cliente {
     public String getRazonSocial() {
         return razonSocial;
     }
-
 }
