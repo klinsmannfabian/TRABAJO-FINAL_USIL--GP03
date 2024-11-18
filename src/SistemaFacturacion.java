@@ -35,7 +35,7 @@ public class SistemaFacturacion {
                 case 5:
                     System.out.print("Ingrese RUC del cliente: ");
                     String ruc = scanner.nextLine();
-                    System.out.print("Ingrese Razón Social del cliente: ");
+                    System.out.print("Ingrese Razón Social del clientes: ");
                     String razonSocial = scanner.nextLine();
                     admin.agregarCliente(clientes, ruc, razonSocial);
                     Historial.registrarAccion(historial, admin.getNombreUsuario(), "Agregó un cliente");
