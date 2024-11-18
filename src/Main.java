@@ -51,7 +51,7 @@ public class Main {
     }
 
     public static void emitirFactura() throws ParseException {
-        System.out.print("Ingrese RUC del cliente: ");
+        System.out.print("Ingrese RUC del cliente : ");
         String ruc = scanner.nextLine();
         System.out.print("Ingrese Razón Social del cliente: ");
         String razonSocial = scanner.nextLine();
